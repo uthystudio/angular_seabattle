@@ -10,7 +10,7 @@ import {Ship} from '../model/ship';
 })
 export class BoardComponent implements OnInit {
   rows: Row[] = [];
-  public ships: Ship[] = [];
+  ships: Ship[] = [];
   constructor(gameController: GameController) {
     this.rows.push(new Row(gameController));
     this.rows.push(new Row(gameController));
